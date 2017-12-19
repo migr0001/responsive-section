@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: Noto Sans, bold;
+  font-family: "Noto Sans", bold;
   margin: 0;
 }
 
@@ -26,15 +26,88 @@ body {
   background-color: #e5c30a;
 }
 
-h1 {
-  font-weight: bold;
-  margin: 0;
+.img-flex {
+  padding-top: 1rem;
+  display: block;
+  width: 100%;
 }
 
 .section-letter {
-  width: 25%;
+  width: 40%;
+  float: left;
 }
 
 .section-icon {
-  width: 25%;
+  width: 40%;
+  float: left;
+}
+
+.section-body {
+  max-width: 45em;
+  padding: 1.3rem;
+  display: block;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 25em) {
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .section-icon {
+    float: right;
+    max-width: 20%;
+  }
+
+  .section-letter {
+    max-width: 20%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    padding-bottom: 1rem;
+  }
+
+  .section-icon {
+    max-width: 15%;
+  }
+
+  .section-letter {
+    max-width: 15%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .wrapper {
+    overflow: hidden;
+  }
+
+  .section-icon {
+    max-width: 8%;
+  }
+
+  .section-letter {
+    max-width: 8%;
+  }
+
 }
